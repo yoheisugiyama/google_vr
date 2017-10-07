@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	 <script src="../source/build/vrview.min.js"></script>
+
+</head>
+<body>
+	
+<div id="vrview"></div>
+
+<script>
+        var vrView;
+        window.addEventListener('load', onVrViewLoad)
+        function onVrViewLoad(){
+            vrView = new VRView.Player('#vrview', {
+                image: '../source/images/1.jpg',
+                width: '100%',
+                height: 1000,
+            });
+        }
+</script>
+
+</body>
+</html>
